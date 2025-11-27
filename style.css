@@ -1017,3 +1017,17 @@ body {
         padding: 6rem 1rem 3rem !important; /* Reduce side padding for phones */
     }
 }
+@media (max-width: 900px) {
+    /* ... existing mobile fixes ... */
+
+    /* ADD THIS RULE: Hides the Projects, Skills, Experience, etc. links */
+    .nav-links {
+        display: none !important;
+    }
+    
+    /* ADD THIS RULE: Ensure the name/logo is aligned correctly */
+    .nav-inner {
+        /* This ensures the logo takes up the full space when links are hidden */
+        justify-content: flex-start !important; 
+    }
+}
