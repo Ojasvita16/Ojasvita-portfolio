@@ -995,31 +995,21 @@ body {
   color: var(--navy);
 }
 @media (max-width: 900px) {
-    /* 1. HERO SPACING & ANIMATION HIDING */
+    /* **NEW PADDING:** Use an extremely large padding value to ensure content clears the nav bar */
     .hero {
-        /* Pushes content down to clear the fixed navigation bar */
-        padding: 7rem 1rem 3rem !important; 
+        padding: 10rem 1rem 3rem !important; /* Increased top padding */
     }
     
-    /* Hides the animated text and ensures it takes up NO space */
+    /* Hides the animated text and forces NO space */
     #typed-sentence {
         display: none !important;
         height: 0 !important; 
-        line-height: 0 !important;
     }
 
-    /* Hides the blinking cursor */
-    #typed-sentence::after {
-        display: none !important;
-    }
-    
-    /* 2. NAVIGATION LINKS HIDING */
-    /* Hides Projects, Skills, Experience, etc. links */
+    /* Hides navigation links and aligns logo left */
     .nav-links {
         display: none !important;
     }
-    
-    /* Ensures the logo/name is aligned to the left */
     .nav-inner {
         justify-content: flex-start !important; 
     }
