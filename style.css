@@ -138,6 +138,10 @@ btn-primary { background: var(--blue); color: white; padding: 0.55rem 1rem; bord
   max-width: 60ch;
 }
 
+.hero-left {
+  min-height: 250px; 
+}
+
 
 
 /* Make CTA buttons rounded & premium */
@@ -993,59 +997,23 @@ body {
   font-weight: 700;
   color: var(--navy);
 }
+@media (max-width: 900px) {
+    /* ... other stacking rules (like .hero) ... */
 
-/* =========================================
-   MOBILE OVERHAUL (max-width 600px)
-========================================= */
-@media (max-width: 600px) {
-    /* 1. GENERAL PADDING & FONT SIZE REDUCTION */
-    .nav-inner {
-        padding: 0.8rem 1rem; /* Reduce side padding for phones */
-    }
-    
-    .hero {
-        padding: 6rem 1rem 3rem; /* Reduce all padding drastically */
-    }
-    
-    .hero-left h2, #typed-sentence {
-        font-size: 2.2rem; /* Shrink large title */
-    }
-    
-    /* 2. CONTACT CARD (Ensure it centers and shrinks slightly) */
-    .contact-card.pro {
-        width: 100%; /* Full width */
-        margin-top: 2rem;
-    }
-    
-    /* 3. TIMELINE FIX */
-    .timeline::before,
-    .timeline-dot {
-        left: 30px; /* Move line much closer to the edge */
-    }
-
-    .timeline-content {
-        width: calc(100% - 70px); /* Fill most of the screen */
-        left: 70px; /* Push content closer to the line */
-        padding: 20px;
-    }
-    
-    /* 4. NAVBAR (Placeholder for Hamburger - requires JS/HTML change) */
-    .nav-links {
-        display: none; /* Hide links on mobile */
-    }
-    
-    /* You would need to add CSS/HTML for a mobile menu button here */
-}
-
-/* Media Query for small screens (Mobile Phones) */
-@media (max-width: 600px) {
-    /* Existing mobile fixes go here... */
-    
-    /* ADD THIS LINE: Hides the animated text on small devices */
+    /* Force the typing text to be completely gone on small screens */
     #typed-sentence {
         display: none !important;
+        height: 0 !important; /* Force its height to be zero as well */
+        line-height: 0 !important;
     }
 
-    /* You may need to adjust the padding of the element *above* the typed sentence
-       to recover some space, if needed. */
+    /* Remove the blinking cursor as well */
+    #typed-sentence::after {
+        display: none !important;
+    }
+    
+    /* Ensure the Hero section itself doesn't have excess padding */
+    .hero {
+        padding: 6rem 1rem 3rem !important; /* Reduce side padding for phones */
+    }
 }
