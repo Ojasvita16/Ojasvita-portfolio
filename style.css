@@ -303,12 +303,9 @@ section {
   line-height: 1.2;
   position: relative;
   padding-right: 10px; 
-  
-  /* **************************************** */
-  /* ADD THESE TWO LINES TO PREVENT JUMPING */
   height: 3.6rem; 
-  min-height: 50px; 
-  /* **************************************** */
+    min-height: 50px; 
+
 }
 #typed-sentence .name {
   color: var(--blue);
@@ -998,36 +995,32 @@ body {
   color: var(--navy);
 }
 @media (max-width: 900px) {
-    /* ... other stacking rules (like .hero) ... */
-
-    /* Force the typing text to be completely gone on small screens */
+    /* 1. HERO SPACING & ANIMATION HIDING */
+    .hero {
+        /* Pushes content down to clear the fixed navigation bar */
+        padding: 7rem 1rem 3rem !important; 
+    }
+    
+    /* Hides the animated text and ensures it takes up NO space */
     #typed-sentence {
         display: none !important;
-        height: 0 !important; /* Force its height to be zero as well */
+        height: 0 !important; 
         line-height: 0 !important;
     }
 
-    /* Remove the blinking cursor as well */
+    /* Hides the blinking cursor */
     #typed-sentence::after {
         display: none !important;
     }
     
-    /* Ensure the Hero section itself doesn't have excess padding */
-    .hero {
-        padding: 6rem 1rem 3rem !important; /* Reduce side padding for phones */
-    }
-}
-@media (max-width: 900px) {
-    /* ... existing mobile fixes ... */
-
-    /* ADD THIS RULE: Hides the Projects, Skills, Experience, etc. links */
+    /* 2. NAVIGATION LINKS HIDING */
+    /* Hides Projects, Skills, Experience, etc. links */
     .nav-links {
         display: none !important;
     }
     
-    /* ADD THIS RULE: Ensure the name/logo is aligned correctly */
+    /* Ensures the logo/name is aligned to the left */
     .nav-inner {
-        /* This ensures the logo takes up the full space when links are hidden */
         justify-content: flex-start !important; 
     }
 }
