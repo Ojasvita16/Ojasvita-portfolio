@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ojasvita Akojwar — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="logo-mark">OA</div>
+        <div>
+          <h1>Ojasvita Akojwar</h1>
+          <p>Computer Engineering • Problem solver</p>
+        </div>
+      </div>
+
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact" class="btn-primary">Contact</a>
+        <a href="Resume.pdf" target="_blank" class="btn-primary dark">Resume</a>
+      </div>
+
+      <button class="nav-toggle" aria-expanded="false">☰</button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- HERO -->
+    <header class="hero">
+      <div class="hero-left">
+        <h2>Hi — I'm <span class="accent">Ojasvita Akojwar</span></h2>
+        <p class="lead">I build user-focused web apps and intelligent systems. I enjoy turning data and ideas into robust, maintainable solutions — with a focus on clean UI and practical ML tools.</p>
+
+        <div class="ctas">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-outline">Let's Connect</a>
+        </div>
+
+        <div class="chips">
+          <div class="chip">Open to internships</div>
+          <div class="chip">Mentor: UI / Frontend</div>
+          <div class="chip">Lila Poonawala Scholar</div>
+        </div>
+
+        <div class="about">
+          <div class="about-text">
+            <h4>About me</h4>
+            <p>Computer Engineering student with hands-on experience building web apps, QR-based attendance systems and ML projects. Strong team-lead experience and multiple hackathon achievements.</p>
+          </div>
+        </div>
+      </div>
+
+    <!-- Contact Card (replace existing hero-card contents with this) -->
+    <div class="contact-card pro">
+  <button class="photo-btn">
+    <img id="profilePhoto" src="profile.jpg" alt="Ojasvita">
+  </button>
+
+  <h2 class="contact-name">Ojasvita Akojwar</h2>
+  <p class="contact-tagline">Computer Engineering • Web Developer • Java Enthusiast</p>
+  
+ 
+
+  <div class="contact-info">
+    <p>📩<a href="mailto:ojasvitaakojwar@gmail.com">ojasvitaakojwar@gmail.com</a></p>
+    <p>💼 <a href="tel:+918767373594">Persistent Intern</a></p>
+    <p>📞 <a href="tel:+918767373594">+91 8767373594</a></p>
+    <p> <div class="divider"></div>📍 Nagpur, Maharashtra</p>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://www.linkedin.com" target="_blank"><svg height="24" width="24" viewBox="0 0 24 24" fill="#0A66C2">
+  <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8.75h4.55V24H.22V8.75zM8.75 8.75h4.36v2.08h.06c.61-1.15 2.11-2.37 4.34-2.37 4.64 0 5.5 3.05 5.5 7.01V24h-4.55v-7.59c0-1.81-.03-4.14-2.52-4.14-2.52 0-2.9 1.96-2.9 3.99V24H8.75V8.75z"></path>
+</svg>
+</a>
+    <a href="https://github.com" target="_blank"><svg height="24" width="24" viewBox="0 0 24 24" fill="#171515">
+  <path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.92.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.69-3.88-1.54-3.88-1.54-.53-1.33-1.3-1.68-1.3-1.68-1.06-.73.08-.72.08-.72 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.11-.75.41-1.27.74-1.56-2.55-.29-5.23-1.27-5.23-5.65 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.17a11.1 11.1 0 0 1 5.8 0c2.2-1.48 3.17-1.17 3.17-1.17.64 1.59.24 2.77.12 3.06.74.8 1.19 1.82 1.19 3.07 0 4.39-2.69 5.35-5.25 5.63.42.36.8 1.08.8 2.18 0 1.58-.02 2.86-.02 3.25 0 .31.21.67.8.55A10.99 10.99 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5z"/>
+</svg>
+</a>
+ 
+  </div>
+
+  <div class="contact-buttons">
+    <a href="#contact" class="btn-outline-dark">Contact</a>
+    <a href="Resume.pdf" target="_blank" class="btn-outline-dark">Download CV</a>
+  </div>
+</div>
+ 
+    </header>
+
+<!-- FULL SCREEN MODAL -->
+<div id="photoModal" class="photo-modal">
+  <button id="modalClose" class="modal-close">&times;</button>
+  <img id="modalImage" alt="Profile Fullscreen">
+</div>
+
+<!-- 💻 PROJECTS SECTION -->
+<section id="projects">
+  <div class="section-title">
+    <h3>Selected Projects</h3>
+    <p>— Showcasing work in development, AI, and system design</p>
+  </div>
+
+  <div class="projects-grid">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <div class="project-img">
+        <img src="expense-tracker.jpg" alt="Expense Tracker">
+      </div>
+      <div class="project-content">
+        <h4>Expense Tracker Web App</h4>
+        <p>A finance management system built with Spring Boot and MySQL.  
+          Tracks expenses, budgets, and goals for multi-user access.</p>
+        <div class="tags">
+          <span class="tag">Java</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">MySQL</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="btn-view">🔗 View Demo</a>
+          <a href="#" class="btn-code">💻 GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <div class="project-img">
+        <img src="qr-attendance.jpg" alt="Smart Attendance System">
+      </div>
+      <div class="project-content">
+        <h4>Smart Attendance System</h4>
+        <p>Flask-based attendance system using QR codes and face recognition for  
+          secure student verification and automated record marking.</p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Flask</span>
+          <span class="tag">OpenCV</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="btn-view">🔗 View Demo</a>
+          <a href="#" class="btn-code">💻 GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <div class="project-img">
+        <img src="mental-health.jpg" alt="AI Mental Health Companion">
+      </div>
+      <div class="project-content">
+        <h4>AI Mental Health Companion</h4>
+        <p>AI-powered chatbot that uses NLP and emotion recognition  
+          to provide mental wellness conversations and insights.</p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">NLP</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="btn-view">🔗 View Demo</a>
+          <a href="#" class="btn-code">💻 GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- SKILLS -->
+  <!-- ========================= -->
+<!-- Skills & Certifications -->
+<!-- ========================= -->
+<section id="skills" class="skills-section">
+  <div class="section-title">
+    <h1>Technical Skills & Certifications</h1>
+    <h3>Languages, tools, frameworks, and recognitions</h3>
+  </div>
+
+  <!-- TECHNICAL SKILLS -->
+  <div class="skills-container">
+    <div class="skill-item">
+      <span>💻 Java (Advanced)</span>
+      <div class="progress-bar"><div class="fill" style="width: 90%;"></div></div>
+    </div>
+
+    <div class="skill-item">
+      <span>🐍 Python (Advanced)</span>
+      <div class="progress-bar"><div class="fill" style="width: 85%;"></div></div>
+    </div>
+
+    <div class="skill-item">
+      <span>⚙️ JavaScript (Intermediate)</span>
+      <div class="progress-bar"><div class="fill" style="width: 70%;"></div></div>
+    </div>
+
+    <div class="skill-item">
+      <span>🌐 HTML & CSS (Advanced)</span>
+      <div class="progress-bar"><div class="fill" style="width: 95%;"></div></div>
+    </div>
+
+    <div class="skill-item">
+      <span>🧩 MySQL (Intermediate)</span>
+      <div class="progress-bar"><div class="fill" style="width: 75%;"></div></div>
+    </div>
+
+    <div class="skill-item">
+      <span>🤖 Machine Learning / TensorFlow (Intermediate)</span>
+      <div class="progress-bar"><div class="fill" style="width: 65%;"></div></div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <!-- ============================= -->
+<!--      CERTIFICATES SECTION     -->
+<!-- ============================= -->
+<section id="certificates" class="cert-section">
+  <div class="container">
+
+    <h1 class="cert-title">CERTIFICATES</h1>
+
+    <div class="cert-columns">
+
+      <!-- TECHNICAL CERTIFICATES -->
+      <div class="cert-col">
+        <h3 class="cert-subtitle">Technical Certificates</h3>
+
+        <div class="cert-grid">
+          <img src="cert1.jpg" class="cert-thumb" onclick="openCert(this.src)">
+          <img src="cert2.jpg" class="cert-thumb" onclick="openCert(this.src)">
+          <img src="cert3.jpg" class="cert-thumb" onclick="openCert(this.src)">
+          <img src="cert4.jpg" class="cert-thumb" onclick="openCert(this.src)">
+        </div>
+      </div>
+
+      <!-- NON-TECHNICAL CERTIFICATES -->
+      <div class="cert-col">
+        <h3 class="cert-subtitle">Non-Technical Certificates</h3>
+
+        <div class="cert-grid">
+          <img src="nontech1.jpg" class="cert-thumb" onclick="openCert(this.src)">
+          <img src="nontech2.jpg" class="cert-thumb" onclick="openCert(this.src)">
+          <img src="nontech3.jpg" class="cert-thumb" onclick="openCert(this.src)">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FULLSCREEN POPUP FOR CERTIFICATES -->
+<div id="certPopup" class="cert-popup" onclick="closeCert()">
+  <img id="popupImg">
+</div>
+
+ 
+<!--experince---->
+<section id="experience">
+  <div class="section-title">
+    <h1>Experience & Training</h1>
+    <p>Industry exposure, hands-on projects & technical learning</p>
+  </div>
+
+  <div class="timeline-container">
+
+    <!-- Experience 1 -->
+    <div class="timeline-item">
+      <div class="timeline-icon">🏆</div>
+      <div class="timeline-content">
+        <h4>Project Intern — Persistent Systems</h4>
+        <span class="timeline-date">Oct 2023 – Mar 2024</span>
+        <p>
+          Selected as a Project Intern under Persistent’s industry mentorship program. 
+          Collaborated with Persistent engineers to develop a full-stack <b>Expense Tracker System</b> 
+          involving backend logic, database structure, UI refinement, and sprint-based development practices. 
+          Awarded <b>Runner-Up</b> for excellent implementation, structure, and real-world usability.
+        </p>
+      </div>
+    </div>
+
+    <!-- Experience 2 -->
+    <div class="timeline-item">
+      <div class="timeline-icon">🏢</div>
+      <div class="timeline-content">
+        <h4>1-Week Offline Training — Persistent Systems (Pune)</h4>
+        <span class="timeline-date">Jan 2024</span>
+        <p>
+          Completed an intensive offline program at the Pune office covering SDLC workflows, Git practices,
+          cloud basics, debugging, deployment processes, and engineering culture. 
+          Learned real industry processes directly from Persistent professionals.
+        </p>
+      </div>
+    </div>
+
+    <!-- Experience 3 -->
+    <div class="timeline-item">
+      <div class="timeline-icon">💻</div>
+      <div class="timeline-content">
+        <h4>Dassault Systèmes — Java Frameworks & Coding Training</h4>
+        <span class="timeline-date">Aug 2024</span>
+        <p>
+          Completed a focused training program on Java fundamentals, enterprise frameworks, 
+          exception handling, OOP design, debugging, unit testing, and solving timed coding questions.
+          Strengthened core development skills with hands-on practice.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+    <!-- ACHIEVEMENTS -->
+   <section id="achievements">
+  <div class="section-title">
+    <h3>Achievements & Responsibilities</h3>
+    <p>Awards, recognitions & leadership roles</p>
+  </div>
+
+  <div class="achievements-wrapper">
+
+    <!-- Achievements Column -->
+    <div class="achievements-col">
+      <h4 class="sub-heading">Achievements</h4>
+
+      <div class="achv-card">
+        <span class="achv-icon">🌟</span>
+        <p><b>Team Leader – All India Women Hackathon</b><br>
+        Reached <b>semi-finals</b> among 800+ teams for innovation and execution.</p>
+      </div>
+
+      <div class="achv-card">
+        <span class="achv-icon">🏆</span>
+        <p><b>Runner-Up – MentHer Program, Persistent Systems</b><br>
+        Recognized for the Expense Tracker project guided by Persistent mentors.</p>
+      </div>
+
+      <div class="achv-card">
+        <span class="achv-icon">🎓</span>
+        <p><b>Lila Poonawala Foundation Scholar</b><br>
+        Selected for leadership, academic excellence, and social initiatives.</p>
+      </div>
+
+      <div class="achv-card">
+        <span class="achv-icon">💼</span>
+        <p><b>Kiran Girls Scholarship – Persistent Systems</b><br>
+        Secured through aptitude tests and interview selection rounds.</p>
+      </div>
+    </div>
+
+    <!-- Positions of Responsibility Column -->
+    <div class="achievements-col">
+      <h4 class="sub-heading">Positions of Responsibility</h4>
+
+      <div class="achv-card">
+        <span class="achv-icon">📢</span>
+        <p><b>Publicity Head – SRC</b> (2025–2026)<br>
+        Led branding, communication, and campus-wide student engagement.</p>
+      </div>
+
+      <div class="achv-card">
+        <span class="achv-icon">⚡</span>
+        <p><b>Membership Development Head – IEEE</b> (2024–2025)<br>
+        Managed member onboarding, events, and technical development.</p>
+      </div>
+
+      <div class="achv-card">
+        <span class="achv-icon">💻</span>
+        <p><b>Technical Head – ISTE</b> (2023–2025)<br>
+        Conducted coding workshops, technical events & innovation activities.</p>
+      </div>
+
+      <div class="achv-card">
+        <span class="achv-icon">🌱</span>
+        <p><b>Vice President – Green Club</b> (2023–2025)<br>
+        Organized environmental campaigns and awareness programs.</p>
+      </div>
+
+      <div class="achv-card">
+        <span class="achv-icon">🤝</span>
+        <p><b>Social Worker – Stambh Foundation (NGO)</b><br>
+        Contributed to education, social welfare & community outreach.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- CONTACT -->
+     <section id="contact">
+  <div class="contact-wrapper">
+
+    <h2>Contact Me</h2>
+
+    <div class="contact-item">
+      📍 <span>Nagpur, Maharashtra</span>
+    </div>
+
+    <div class="contact-item">
+      📞 <a href="tel:+918767373594">+91 87673 73594</a>
+    </div>
+
+    <div class="contact-item">
+      ✉️ <a href="mailto:ojasvitaakojwar@gmail.com">ojasvitaakojwar@gmail.com</a>
+    </div>
+
+    <div class="contact-item">
+      ✉️ <a href="mailto:ojasvitaakojwar16@gmail.com">ojasvitaakojwar16@gmail.com</a>
+    </div>
+
+    <div class="contact-buttons">
+      <a href="https://www.linkedin.com/in/ojasvita-akojwar-b08a71256" class="btn-linkedin" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Ojasvita16/My-Projects" class="btn-github" target="_blank">GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+<footer>
+  © 2025 Ojasvita Akojwar — Designed with clarity & intent.
+</footer>
+  </main>
+<script>
+  const photoBtn = document.getElementById("profilePhoto");
+  const modal = document.getElementById("photoModal");
+  const modalImg = document.getElementById("modalImage");
+  const closeBtn = document.getElementById("modalClose");
+
+  // OPEN FULLSCREEN
+  photoBtn.onclick = function () {
+    modal.style.display = "flex";
+    modalImg.src = this.src;
+  };
+
+  // CLOSE ON X
+  closeBtn.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  // CLOSE ON OUTSIDE CLICK
+  modal.onclick = function (e) {
+    if (e.target === modal) modal.style.display = "none";
+  };
+</script>
+</body>
+
+
+
+
